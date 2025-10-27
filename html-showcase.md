@@ -576,26 +576,16 @@ document.getElementById('exportData').addEventListener('click', function() {
 3. 将CSS和JavaScript代码添加到`assets/css`和`assets/js`目录
 4. 在`_config.yml`中配置包含目录
 
-例如，创建一个`_includes/chart.html`文件：
+例如，直接在Markdown文件中嵌入HTML代码：
 
 ```html
 <div class="chart-container">
-  <h3>{{ include.title | default: "图表" }}</h3>
-  <canvas id="{{ include.id | default: "chart" }}" width="400" height="200"></canvas>
-  {% if include.controls %}
+  <h3>模型性能对比</h3>
+  <canvas id="performanceChart" width="400" height="200"></canvas>
   <div class="chart-controls">
-    {% for control in include.controls %}
-    {{ control }}
-    {% endfor %}
+    <!-- 控制按钮可以在这里添加 -->
   </div>
-  {% endif %}
 </div>
-```
-
-然后在Markdown文件中使用：
-
-```markdown
-{% include chart.html id="performanceChart" title="模型性能对比" controls=true %}
 ```
 
 ## 🔗 相关资源
