@@ -12,6 +12,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed
+
 # Exclude from processing
 exclude:
   - .sass-cache/
