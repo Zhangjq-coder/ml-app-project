@@ -106,9 +106,14 @@ ml-app-project/
 
 ## 📖 文档导航
 
-- [API文档](/api) - 了解如何使用模型API
-- [演示指南](/demo-guide) - 详细的MLOps组件演示步骤
-- [MLOps组件](/mlops-components) - 各个MLOps工具的详细介绍
+<div class="doc-nav">
+  <a href="/api">API文档</a>
+  <a href="/demo-guide">演示指南</a>
+  <a href="/mlops-components">MLOps组件</a>
+  <a href="/ci-cd">CI/CD流水线</a>
+  <a href="/mlflow-tracking">MLflow实验跟踪</a>
+  <a href="/html-showcase">HTML交互展示</a>
+</div>
 
 ## 🎓 学习价值
 
