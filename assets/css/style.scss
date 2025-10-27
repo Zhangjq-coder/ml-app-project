@@ -1,0 +1,191 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Hero section
+.hero {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+// Features section
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature {
+  background-color: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.feature h3 {
+  margin-top: 0;
+  color: #0366d6;
+}
+
+// Demo section
+.demo {
+  background-color: #f6f8fa;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.demo pre {
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+// Architecture section
+.architecture {
+  margin-bottom: 2rem;
+}
+
+.architecture pre {
+  background-color: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  border-radius: 3px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+// CTA section
+.cta {
+  background-color: #0366d6;
+  color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cta a {
+  color: white;
+  text-decoration: underline;
+}
+
+.cta a:hover {
+  text-decoration: none;
+}
+
+// Responsive design
+@media screen and (max-width: 720px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Custom navigation
+nav {
+  margin-top: 1rem;
+  border-top: 1px solid #e1e4e8;
+  padding-top: 1rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.5rem 0;
+  color: #0366d6;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+// Custom buttons
+.btn {
+  display: inline-block;
+  background-color: #0366d6;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn:hover {
+  background-color: #0256cc;
+  text-decoration: none;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6f42c1;
+}
+
+.btn-secondary:hover {
+  background-color: #5a32a3;
+}
+
+// Custom code blocks
+.highlight {
+  margin-bottom: 1rem;
+}
+
+.highlight pre {
+  margin-bottom: 0;
+}
+
+// Custom tables
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+table th, table td {
+  border: 1px solid #e1e4e8;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+table th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+}
+
+// Custom alerts
+.alert {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 3px;
+}
+
+.alert-info {
+  background-color: #e1f5fe;
+  border-left: 4px solid #039be5;
+  color: #01579b;
+}
+
+.alert-warning {
+  background-color: #fff8e1;
+  border-left: 4px solid #ffc107;
+  color: #ff6f00;
+}
+
+.alert-success {
+  background-color: #e8f5e9;
+  border-left: 4px solid #4caf50;
+  color: #1b5e20;
+}
+
+.alert-danger {
+  background-color: #ffebee;
+  border-left: 4px solid #f44336;
+  color: #b71c1c;
+}

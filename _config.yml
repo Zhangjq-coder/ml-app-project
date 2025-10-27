@@ -1,0 +1,49 @@
+# Site settings
+title: MLOps Project Demo
+description: A comprehensive MLOps project demonstrating data version control, experiment tracking, and CI/CD pipelines
+baseurl: "/ml-app-project" # the subpath of your site, e.g. /blog
+url: "https://zhangjq-coder.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - .gitignore
+  - .dvc/
+  - .pytest_cache/
+  - app/
+  - data/
+  - ml/
+  - tests/
+  - requirements.txt
+
+# Collections
+collections:
+  demos:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "demos"
+    values:
+      layout: "default"
